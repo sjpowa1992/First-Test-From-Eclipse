@@ -8,9 +8,11 @@ public class Main {
 		
 //		System.out.println(p1);
 		
-		Doctor d1 = new Doctor("Pippo", "Rossi", 30, "Surgeon", 12);
+//		Doctor d1 = new Doctor("Pippo", "Rossi", 30, "Surgeon", 12);
 		
-		System.out.println(d1);
+//		System.out.println(d1);
+		
+		System.out.println("ciao");
 
 	}
 
