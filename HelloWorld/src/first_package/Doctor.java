@@ -29,6 +29,14 @@ public class Doctor extends Person {
 		this.years_of_work = years_of_work;
 	}
 	
+	public int getTotalOperations() {
+		return total_operations;
+	}
+	
+	public void setTotaloperations(int total_operations) {
+		this.total_operations = total_operations;
+	}
+	
 	public int getSuccessful_operations() {
 		return successful_operations;
 	}
@@ -37,23 +45,16 @@ public class Doctor extends Person {
 		this.successful_operations = successful_operations;
 	}
 	
-	public int getTotalOperations() {
-		return total_operations;
-	}
-	
-	public void setTotalOperations() {
-		this.total_operations = total_operations;
-	}
-	
 	// ================================================= //
 	
 	// constructor
 	
 	public Doctor(String name, String lastname, int age, String type, int years_of_work,
-			int successful_operations) {
+			int total_operations ,int successful_operations) {
 		super(name, lastname, age);
 		this.type = type;
 		this.years_of_work = years_of_work;
+		this.total_operations = total_operations;
 		this.successful_operations = successful_operations;
 	}
 
@@ -62,19 +63,22 @@ public class Doctor extends Person {
 	// toString METHOD
 	
 	public String toString() {
-		return	super.toString() +
-				"\nType of doctor: " + type +
-				"\nYear of work: " + years_of_work +
-				"\nSuccessful operation: " + successful_operations;
+		return	super.toString() 			 +
+				"\n> Type of doctor: " 		 + type +
+				"\n> Year of work: " 		 + years_of_work +
+				"\n> Total operations: " 	 + total_operations +
+				"\n> Successful operation: " + successful_operations;
 	}
 	
 	// ================================================= //
 	
+	// if the doctor has done more than 90% of successful op on totals
+	// he is a good doctor
 	public boolean goodDoctor() {
 		
-		if( (90*successful_operations) / 100 >= 90)
+		if( ((90*total_operations) / 100) <= successful_operations)
 			return true;
-		
+
 		return false;
 	}
 	

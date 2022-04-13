@@ -50,9 +50,10 @@ public class Person {
 	// toString method
 	public String toString() {
 		return
-				"Name: " + name +
-				"\nLastname: " + lastname +
-				"\nAge: " + age;
+				">>> PERSON CARD <<<" 	+
+				"\n> Name: " 			+ name +
+				"\n> Lastname: " 		+ lastname +
+				"\n> Age: " 			+ age;
 	}
 	
 }

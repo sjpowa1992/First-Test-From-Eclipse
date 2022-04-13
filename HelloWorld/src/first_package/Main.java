@@ -8,11 +8,13 @@ public class Main {
 		
 //		System.out.println(p1);
 		
-//		Doctor d1 = new Doctor("Pippo", "Rossi", 30, "Surgeon", 12);
+		Doctor d1 = new Doctor("Pippo", "Rossi", 30, "Surgeon", 12, 100, 95);
 		
-//		System.out.println(d1);
+		System.out.println(d1);
 		
-		System.out.println("bau");
+		System.out.println("\n> Is the Dr." + d1.getName() + " a good doctor? -> "
+				+ d1.goodDoctor());
+		
 
 	}
 
