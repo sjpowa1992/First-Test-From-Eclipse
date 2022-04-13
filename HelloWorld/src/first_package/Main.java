@@ -12,7 +12,7 @@ public class Main {
 		
 //		System.out.println(d1);
 		
-		System.out.println("ciao");
+		System.out.println("bau");
 
 	}
 
