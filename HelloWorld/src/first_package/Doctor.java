@@ -6,6 +6,7 @@ public class Doctor extends Person {
 	
 	private String type;
 	private int years_of_work;
+	private int total_operations;
 	private int successful_operations;
 	
 	// ================================================= //
@@ -36,6 +37,14 @@ public class Doctor extends Person {
 		this.successful_operations = successful_operations;
 	}
 	
+	public int getTotalOperations() {
+		return total_operations;
+	}
+	
+	public void setTotalOperations() {
+		this.total_operations = total_operations;
+	}
+	
 	// ================================================= //
 	
 	// constructor
@@ -63,7 +72,8 @@ public class Doctor extends Person {
 	
 	public boolean goodDoctor() {
 		
-		if( (90*years_of_work) / 100 >= 90)
+		if( (90*successful_operations) / 100 >= 90)
+			return true;
 		
 		return false;
 	}
