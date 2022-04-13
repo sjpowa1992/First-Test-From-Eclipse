@@ -12,7 +12,7 @@ public class Main {
 		
 		System.out.println(d1);
 		
-		System.out.println("\n> Is the Dr." + d1.getName() + " a good doctor? -> "
+		System.out.println("\n> Is Dr." + d1.getName() + " a good doctor? -> "
 				+ d1.goodDoctor());
 		
 
